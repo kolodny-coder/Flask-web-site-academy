@@ -1,0 +1,57 @@
+{% extends "layout.html" %}
+    
+{% block content %}
+    <div class="row">
+        <div class="col-md-12 text-center">
+            <h1>Welcome to Universal Tech Academy.</h1>
+
+            {% if session['username'] %}
+                <h3>Let's get started.</h3>
+            {% else %}
+                <p>Already registered? <a href="{{url_for('login') }}">Login</a></p>
+            {% endif %}
+
+            <div style="text-align:left;">
+                <h2> How do you like this ??</h2>
+
+                <p>Once I slept in a surfboard bag on a grassy dune, overlooking a 
+                    city beach in Durban, South Africa. Durban is not exactly the
+                    safest place in the world to sleep outside. But I knew the waves
+                    would be pumping at sunrise. I hardly slept. Dawn was dark grey 
+                    before strands of gold crept up over the horizon. I could hear 
+                    waves breaking and could feel the light, offshore breeze.
+                    I placed my t-shirt in my surfboard bag and tied it to a
+                    metal railing on the pier that separates North Beach from
+                    the Bay of Plenty. I didn’t jump off the pier, as I usually did.
+                    I’m not sure why. Maybe because it was still dark.
+                    I ran back to the beach and paddled out. You hardly need to
+                    paddle because the rip beside the pier is like a funnel that
+                    ejects you into the line-up. Of course I was alone out there,
+                    besides the fish and the… best not think about that.
+                    The sun opened its eye and turned the water to honey.
+                    A wave rose up right where I was waiting. I turned and paddled, dropping down onto a glassy wall that stretched out like elastic. Instead of racing or turning I simply looked down. The sun’s fire blazed through the green ocean wall, like an incandescent, living spirit.
+                    The Wave, by Jules Phillips, from an article on Surfd.com
+                    I rode that wave to the shore, then ran back along the beach as fast as I could. Three more golden waves peeled across the bay, each a little more perfect than the last.
+                    By the time I was back out there I was beaming, fulfilled, thoughtless (free of mental chatter), completely in the moment, totally alive.
+                    So, yes, I’d say surfing is fun.
+                    1.5K viewsView Upvoters</p>
+
+                <p>
+                    MongoDB Compass Community provides users a quick and easy way to execute
+                    a MongoDB document aggregation. Aggregation in MongoDB Compass Community
+                    is a simple and easy, but sophisticated, program that provides users with
+                    multiple MongoDB Compass options, including how to analyze documents and
+                    visualize and explore schemas to understand the types, ranges and 
+                    frequency of fields in a data set. The Aggregation Pipeline Builder in
+                    MongoDB Compass Community offers the user the ability to create
+                    aggregation pipelines to process data so documents in a collection 
+                    can pass through multiple stages where the documents are processed
+                    into a set of aggregated results, using the aggregate method in MongoDB Compass.
+                </p>
+
+
+            </div>
+
+        </div>
+    </div>
+{% endblock %}
